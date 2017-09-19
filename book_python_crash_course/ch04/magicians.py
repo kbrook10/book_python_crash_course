@@ -14,4 +14,3 @@ for magician in magicians:
 print("Thank you everyone, that was a great magic show!")
 
 
-# (2) Trying it yourself

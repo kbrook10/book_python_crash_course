@@ -1,19 +1,20 @@
 # (1) Modifying the content of lists.
 
+# Add Import statement to have Python to copy functions from printing_function
+# module to this file...
+
+# import printing_functions
+# from printing_functions import printing_models
+# from printing_functions import printing_models as pm
+# import printing_functions as pf
+from printing_functions import *
+
 ## Start with some designs that need to be printed...
 unprinted_designs = ['iphone case', 'robot penant', 'dodecahedron']
 completed_models = []
 
-## Simulate printing each design, until none are left
-while unprinted_designs:
-	current_design = unprinted_designs.pop()
+## Call function
 
-	## Simulate generating the 3D print
-	print('\nPrinting model: ' + current_design)
-	completed_models.append(current_design)
+printing_models(unprinted_designs, completed_models)
 
-## Display all generated modesl
 
-print('\nThe following models have been generated:')
-for completed_model in completed_models:
-	print('\t' + completed_model)

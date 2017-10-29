@@ -8,11 +8,9 @@
 # make_pizza('mushrooms', 'green peppers', 'extra cheese')
 
 # (2) Describe the list of toppings on each order
-def make_pizza(*toppings):
+def make_pizza(size, *toppings):
 	'''Pirnt the list of toppings that have been requested...'''
-	print('\nMaking a pizza with the following toppings: ')
+	print('\nMaking a ' + str(size) + ' inch pizza with the following ' +
+		'toppings: ')
 	for topping in toppings:
 		print('\t- ' + topping)
-
-make_pizza('pepperoni')
-make_pizza('mushrooms', 'green peppers', 'extra cheese')

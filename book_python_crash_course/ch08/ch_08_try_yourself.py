@@ -138,27 +138,96 @@
 
 
 # (8-11) Unchanged Magicians
-magicians = ['jack the great', 'john the fond', 'jill the will']
+# magicians = ['jack the great', 'john the fond', 'jill the will']
 
-def make_great(magicians):
-    '''Add Great to the names of the magicians'''
-    great_magicians = []
+# def make_great(magicians):
+#     '''Add Great to the names of the magicians'''
+#     great_magicians = []
 
-    while magicians:
-        current_magician = magicians.pop()
-        current_magician += ' The Great'
-        great_magicians.append(current_magician)
+#     while magicians:
+#         current_magician = magicians.pop()
+#         current_magician += ' The Great'
+#         great_magicians.append(current_magician)
 
-    show_magicians(great_magicians)
+#     show_magicians(great_magicians)
 
-def show_magicians(magicians):
-    '''Print the names of all the magicians'''
-    for magician in magicians:
-        print('It is our pleasure to introduce to you... ' + magician.title())
+# def show_magicians(magicians):
+#     '''Print the names of all the magicians'''
+#     for magician in magicians:
+#         print('It is our pleasure to introduce to you... ' + magician.title())
 
 
-list_copy = magicians[:]
-make_great(list_copy)
-show_magicians(magicians)
-show_magicians(list_copy)
-print('That is all folks!')
+# list_copy = magicians[:]
+# make_great(list_copy)
+# show_magicians(magicians)
+# show_magicians(list_copy)
+# print('That is all folks!')
+
+# (8-12) Sandwiches
+## Write function to accept list of items on a sandwich
+# def sandwich_order(sandwich, *items):
+#     '''Build your own sandwich'''
+#     print('\nWe are making your ' + sandwich + ' with the following toppings: ')
+
+#     for item in items:
+#         print('\t- ' + item)
+
+
+# sandwich_order('reuben','lettuce', 'tomato', 'pickles')
+
+
+
+# (8-13) User Profile
+# def build_profile(first, last, **user_info):
+#     '''Build a dictionary to store everything about the user'''
+
+#     # Create the structure for the user profile
+#     profile = {}
+#     profile['first_name'] = first
+#     profile['last_name'] = last
+
+#     # Create the structure to accept information that is unknown
+#     for key, value in user_info.items():
+#         profile[key] = value
+
+#     # Return the completed profile to the calling function
+#     return profile
+
+# # Call the build profile for new user
+# user_profile = build_profile('keith', 'brooks', home = 'nashville',
+#                 passion = 'solving process problems')
+
+# # Print the end result
+# print(user_profile)
+
+
+# (8-14) Cars
+## Create function that stores information about a car
+# def car_specs(manufacturer, model, **car_info):
+#     '''Create profile for car'''
+
+#     # Create the structure for the car profile
+#     car = {}
+#     car['manufacturer'] = manufacturer
+#     car['model'] = model
+
+#     # Create the structure for the car information
+#     for key, value in car_info.items():
+#         car[key] = value
+
+#     # Return the car profile to the calling function
+#     return car
+
+# # Create car profile
+# my_car = car_specs('nissan', 'altima', color = 'black', type = '4 door', year = 2011)
+
+# # Display the car profile
+# print(my_car)
+
+
+# (8-15) Printing models:
+
+
+# (8-16) Imports:
+
+# (8-17) Styling Functions:
